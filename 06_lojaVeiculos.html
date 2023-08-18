@@ -2,9 +2,9 @@
     //Problema: Loja de veículos
     //Crie os seguintes arrays:
     // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    // let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     // let carrosHatch = ["308", "Focus", "i30"];
-    
+
     //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, 
     //peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
@@ -12,13 +12,34 @@
 
     //ENTRADA
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     let carrosHatch = ["308", "Focus", "i30"];
-    
+
+    let carroNovo1 = prompt(`Qual dos carros você deseja adicionar na lista.`).trim();
+    let tipoCarro1 = prompt(`Qual o tipo do carro ${carroNovo1}? 1-SUV | 2-Sedan | 3-Hatch.`).trim();
+    let carroNovo2 = prompt(`Qual dos carros você deseja adicionar na lista.`).trim();
+    let tipoCarro2 = prompt(`Qual o tipo do carro ${carroNovo2}? 1-SUV | 2-Sedan | 3-Hatch.`).trim();
+    let carroNovo3 = prompt(`Qual dos carros você deseja adicionar na lista.`).trim();
+    let tipoCarro3 = prompt(`Qual o tipo do carro ${carroNovo3}? 1-SUV | 2-Sedan | 3-Hatch.`).trim();
 
     //PROCESSAMENTO
+    if (tipoCarro1 == 1) carrosSUV.push(carroNovo1);
+    else if (tipoCarro1 == 2) carrosSedan.push(carroNovo1);
+    else if (tipoCarro1 == 3) carrosSedan.push(carroNovo1);
 
+    if (tipoCarro2 == 1) carrosSUV.push(carroNovo2);
+    else if (tipoCarro2 == 2) carrosSedan.push(carroNovo2);
+    else if (tipoCarro2 == 3) carrosSedan.push(carroNovo2);
+
+    if (tipoCarro3 == 1) carrosSUV.push(carroNovo3);
+    else if (tipoCarro3 == 2) carrosSedan.push(carroNovo3);
+    else if (tipoCarro3 == 3) carrosSedan.push(carroNovo3);
 
     //SAÍDA
+    alert(`A lista de SUVs possui ${carrosSUV.join(".")}.`);
+    alert(`A lista de Sedans possui ${carrosSedan.join(".")}.`);
+    alert(`A lista de Hatch possui ${carrosHatch.join(".")}.`);
+
+
 
 </script>

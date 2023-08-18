@@ -10,12 +10,10 @@
     let removendo = Number(prompt(`Informe qual carro dessa lista você deseja remover, sendo eles: 1-Tiggo, 2-Sportage, 3-Tucson, 4-EcoSport.`).trim());
 
     //PROCESSAMENTO
-    if (removendo >= 1 && removendo <= carrosSUV.length) {
-        alert(`Sua lista antiga de SUVs: ${carrosSUV}.`); 
-
-        let carroRemovido = carrosSUV.splice(removendo - 1, 1);
-        alert(`Carro "${carroRemovido}" removido com sucesso.`);
-        alert(`Sua lista após remoção: ${carrosSUV}.`);
+    if (removendo == 1 || removendo == 2 || removendo == 3 || removendo == 4 || removendo == 5) {
+        alert(`A lista antiga era:` + carrosSUV);
+        carrosSUV.splice(removendo - 1, 1);
+        alert(`A nova lista é:` + carrosSUV);
     }
     else {
         alert(`Houve algum erro.`);
